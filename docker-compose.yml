@@ -1,0 +1,8 @@
+services:
+  web_dos:
+    image: php:8.2-apache
+    container_name: servidor_php_dos
+    ports:
+      - "8090:80"
+    volumes:
+      - .:/var/www/html
